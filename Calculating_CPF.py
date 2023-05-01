@@ -31,7 +31,7 @@ def calculate_cpf(CPF):
                 digit2_valido = 0
  
             if digito1_valido == int(CPF[9]) and digito2_valido == int(CPF[10]):
-                return true
+                return True
             else:
                 return False
  
