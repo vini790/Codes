@@ -20,12 +20,12 @@ def calculate_cpf(CPF):
  
             sum_digit2 = 0
             cpf_numbers = CPF[:10]
-            numbers_calculation_digit = range(10, 1, -1)
+            numbers_calculation_digit = range(11, 1, -1)
  
             for cont in range(len(cpf_numbers)):
                 digit_calculation2 = int(cpf_numbers[count]) * digit_calculation_numbers[count]
                 sum_digit2 += calculate_digit2
-            digit2_valido = (sum_digit2 * 11) % 11
+            digit2_valido = (sum_digit2 * 10) % 11
  
             if digito2_valido > 9:
                 digit2_valido = 0
