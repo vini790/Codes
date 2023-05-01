@@ -20,7 +20,7 @@ def calculate_cpf(CPF):
  
             sum_digit2 = 0
             cpf_numbers = CPF[:10]
-            numbers_calculation_digit = range(11, 1, -1)
+            numbers_calculation_digit = range(10, 1, -1)
  
             for cont in range(len(cpf_numbers)):
                 digit_calculation2 = int(cpf_numbers[count]) * digit_calculation_numbers[count]
