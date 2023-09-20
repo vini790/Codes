@@ -37,7 +37,7 @@ class CPF:
 
     def _valida_cpf(self):
         """
-        Valida se o CPF fornecido é válido.
+        Compara se os digitos gerados são iguais aos do cpf informado.
 
         Returns:
             bool: True se o CPF é válido, False caso contrário.
