@@ -30,7 +30,7 @@ class CPF:
         Calcula o segundo dígito verificador do CPF.
 
         Returns:
-            int: O primeiro dígito verificador.
+            int: O segundo dígito verificador.
         """
         dig2 = sum([(int(n) * s) for n, s in zip(self._cpf, self._sum2)]) % 11
         return 0 if dig2 < 2 else 11 - dig2
